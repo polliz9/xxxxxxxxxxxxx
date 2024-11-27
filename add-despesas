@@ -1,0 +1,13 @@
+escolha = input("Digite o número da opção desejada: ")
+despesas = {}
+if escolha == "1":
+            categoria = input("Digite a categoria da despesa (ex: alimentação, transporte): ").capitalize()
+            try:
+                valor = float(input("Digite o valor da despesa (ex: 123.45): "))
+                if categoria in despesas:
+                    despesas[categoria] += valor
+                else:
+                    despesas[categoria] = valor
+                print(f"Despesa adicionada com sucesso: {categoria} - R${valor:.2f}")
+            except ValueError:
+                print("Por favor, insira um valor numérico válido.")
