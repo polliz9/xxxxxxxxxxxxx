@@ -1,0 +1,14 @@
+def main():
+    
+    despesas = {}
+
+
+    escolha = input("Digite o número da opção desejada: ")
+
+        
+if escolha == "2":
+    if despesas:
+                print("\nResumo das despesas:")
+                for categoria, valor in despesas.items():
+                    print(f"- {categoria}: R${valor:.2f}")
+    
